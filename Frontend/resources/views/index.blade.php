@@ -15,7 +15,7 @@
         </div>
       </div>
     <div class="image-slide">
-    <img src="http:\\adminsite.local\{{$releaseNumbers[0]->image->upload_path}}">
+    <img src="http:\\sonlq-admin.herokuapp.com\{{$releaseNumbers[0]->image->upload_path}}">
     </div>
      
     </div>
@@ -30,7 +30,7 @@
         </div>
       </div>
         <div class="image-slide">
-        <img src="http:\\adminsite.local\{{$releaseNumbers[$i]->image->upload_path}}">
+        <img src="http:\\sonlq-admin.herokuapp.com\{{$releaseNumbers[$i]->image->upload_path}}">
         </div>
     </div>
     @endfor
@@ -55,14 +55,14 @@ New
 <div id="block-new-posts">
     <div id="new-post">
 
-      <img src="http:\\adminsite.local\{{$listPost[0]->image->upload_path}}" alt="">
+      <img src="http:\\sonlq-admin.herokuapp.com\{{$listPost[0]->image->upload_path}}" alt="">
       <a class="new-post-link" href="{{route('show-post',['id' =>$listPost[0]->id ])}}" title="{{$listPost[0]->title}}">{{$listPost[0]->title}}</a>
       <p class="new-post-name">{{$listPost[0]->release_number->release_number_name}}</p>
     </div>
     <div id="old-post">
         @if(isset($listPost[1]))
         <div id="old-post-above">
-        <img src="http:\\adminsite.local\{{$listPost[1]->image->upload_path}}" alt="">
+        <img src="http:\\sonlq-admin.herokuapp.com\{{$listPost[1]->image->upload_path}}" alt="">
         <a class="old-post-link" href="{{route('show-post',['id' =>$listPost[1]->id ])}}" title="{{$listPost[1]->title}}">{{$listPost[1]->title}}</a>
         <p class="old-post-name">{{$listPost[1]->release_number->release_number_name}}</p>
         </div>
@@ -70,14 +70,14 @@ New
         <div id="old-post-bellow">
             @if(isset($listPost[2]))
             <div>
-            <img src="http:\\adminsite.local\{{$listPost[2]->image->upload_path}}" alt="">
+            <img src="http:\\sonlq-admin.herokuapp.com\{{$listPost[2]->image->upload_path}}" alt="">
             <a class="old-post-link" href="{{route('show-post',['id' =>$listPost[2]->id ])}}" title="{{$listPost[2]->title}}">{{$listPost[2]->title}}</a>
             <p class="old-post-name">{{$listPost[2]->release_number->release_number_name}}</p>
             </div>
             @endif
             @if(isset($listPost[3]))
             <div>
-            <img src="http:\\adminsite.local\{{$listPost[3]->image->upload_path}}" alt="">
+            <img src="http:\\sonlq-admin.herokuapp.com\{{$listPost[3]->image->upload_path}}" alt="">
             <a class="old-post-link" href="{{route('show-post',['id' =>$listPost[3]->id ])}}" title="{{$listPost[3]->title}}">{{$listPost[3]->title}}</a>
             <p class="old-post-name">{{$listPost[3]->release_number->release_number_name}}</p>
             </div>

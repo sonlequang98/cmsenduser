@@ -5,7 +5,7 @@
     <div id="menu-user">
         <ul>
             <li>Profile</li>
-            <li><a href="http:\\adminsite.local">Payment</a></li>
+            <li><a href="http://sonlq-admin.herokuapp.com">Payment</a></li>
             <li><a href="{{route('logout')}}">Logout</a></li>
         </ul>
     </div>

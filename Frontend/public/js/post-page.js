@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let postId = $('#post-id').val();
     let res = $.ajax({
-        url: 'http://usersite.local/api/posts/' + postId + '/show',
+        url: 'http://sonlq-enduser.herokuapp.com/api/posts/' + postId + '/show',
         type: 'GET',
         dataType: 'json'
     });

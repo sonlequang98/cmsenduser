@@ -81,14 +81,14 @@
 
             <div id="menu-category">
                 <ul>
-                    <a href="http:\\usersite.local">HOME&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+                    <a href="http:\\sonlq-enduser.herokuapp.com">HOME&nbsp;&nbsp;&nbsp;&nbsp;|</a>
                     @foreach(Frontend\Category::with('categorychilds')->whereNull('parent_id')->get() as $category)
-                    <li><a href="http:\\usersite.local\categories\{{$category->id}}">{{$category->category_name}}&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+                    <li><a href="http:\\sonlq-enduser.herokuapp.com\categories\{{$category->id}}">{{$category->category_name}}&nbsp;&nbsp;&nbsp;&nbsp;|</a>
                         @if($category->categorychilds->count()>0)
                         <div>
                             <ul>
                                 @foreach($category->categorychilds as $categorychild)
-                                <li> <a href="http:\\usersite.local\categories\{{$categorychild->id}}">{{$categorychild->category_name}}</a></li>
+                                <li> <a href="http:\\sonlq-enduser.herokuapp.com\categories\{{$categorychild->id}}">{{$categorychild->category_name}}</a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -102,7 +102,7 @@
         <div id="menu-global">
             <ul>
                 @foreach(Frontend\Category::paginate(7)->where('global_display',1) as $category)
-                <li><a href="http:\\usersite.local\categories\{{$category->id}}">{{$category->category_name}}&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                <li><a href="http:\\sonlq-enduser.herokuapp.com\categories\{{$category->id}}">{{$category->category_name}}&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
                 @endforeach
             </ul>
         </div>
@@ -257,7 +257,7 @@
         @yield('content')
     </div>
     <div id="footer">
-       <p> Copyrights © 2019 <a href="http:\\adminsite.local">Duy Tan University</a>.</p>
+       <p> Copyrights © 2019 <a href="http://sonlq-admin.herokuapp.com">Duy Tan University</a>.</p>
     </div>
 
 
