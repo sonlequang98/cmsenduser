@@ -15,7 +15,7 @@
         </div>
       </div>
     <div class="image-slide">
-    <img src="http:\\sonlq-admin.herokuapp.com\{{$releaseNumbers[0]->image->upload_path}}">
+    <img src="{{$releaseNumbers[0]->image->upload_path}}">
     </div>
      
     </div>
