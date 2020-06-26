@@ -48,7 +48,7 @@ function getResultSearchPost(url) {
             }
             for (let i = 0; i < response.length; i++) {
                 resultSearch += `<div class="post-item">
-                <a href="http://sonlq-enduser.herokuapp.com/posts/` + response[i].id + `"><img class="image-post" src="http://sonlq-admin.herokuapp.com/` + response[i].image.upload_path + `" alt=""></a>
+                <a href="http://sonlq-enduser.herokuapp.com/posts/` + response[i].id + `"><img class="image-post" src="`+response[i].image.upload_path + `" alt=""></a>
                         <p>` + response[i].title + `</p>
                         <a class="link-icon" href="http://sonlq-enduser.herokuapp.com/posts/` + response[i].id + `"><img class="icon-detail" src="/image/right-arrow.png" width="20px" class="icon-post-detail" alt=""></a>
                         </div>`

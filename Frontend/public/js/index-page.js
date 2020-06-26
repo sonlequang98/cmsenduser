@@ -25,7 +25,7 @@ function getPosts(url) {
         posts = data.data;
         for (let i = 0; i < posts.length; i++) {
             listPosts += `<div class="post-item">
-            <a href="http://sonlq-admin.herokuapp.com/posts/` + posts[i].id + `"><img class="image-post" src="http://sonlq-admin.herokuapp.com/` + posts[i].image.upload_path + `" alt=""></a>
+            <a href="http://sonlq-admin.herokuapp.com/posts/` + posts[i].id + `"><img class="image-post" src="`+posts[i].image.upload_path + `" alt=""></a>
                     <p>` + posts[i].title + `</p>
                     <a class="link-icon" href="http://sonlq-enduser.herokuapp.com/posts/` + posts[i].id + `"><img class="icon-detail" src="/image/right-arrow.png" width="20px" class="icon-post-detail" alt=""></a>
                     </div>`
