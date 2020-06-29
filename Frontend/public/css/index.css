@@ -1,4 +1,7 @@
 /* format header */
+a, p, button {
+    font-family: "Times New Roman", Times, serif;
+}
 
 a:hover {
     text-decoration: none;
@@ -869,16 +872,4 @@ select {
     padding-top: 0.4%;
     padding-bottom: 0.4%;
     margin-right: 5%;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-button {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    font-family: Arial, Helvetica, sans-serif;
 }
