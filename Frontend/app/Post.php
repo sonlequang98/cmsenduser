@@ -19,6 +19,6 @@ class Post extends Model
     }
     public function image()
     {
-        return $this->belongsTo('Frontend\image');
+        return $this->belongsTo('Frontend\Image');
     }
 }
