@@ -871,6 +871,14 @@ select {
     margin-right: 5%;
 }
 
-p, a, button {
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
     font-family: Arial, Helvetica, sans-serif;
 }
