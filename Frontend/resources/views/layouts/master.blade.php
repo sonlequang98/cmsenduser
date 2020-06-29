@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <script src="{{asset('/js/jquery-3.4.1.min.js')}}"></script>
     <script src="{{asset('js/jquery-ui.min.js')}}"></script>
-    <script src="{{asset('js/datepicker-ja.js')}}"></script>
+    <!-- <script src="{{asset('js/datepicker-ja.js')}}"></script> -->
     <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <style>
         html {
